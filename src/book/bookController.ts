@@ -104,6 +104,7 @@ const updateBook = async (req: Request, res: Response, next: NextFunction) => {
         await fs.promises.unlink(filePath);
     }
 
+    
     // check if file field is exists.
     let completeFileName = "";
     if (files.file) {
